@@ -35,6 +35,9 @@ set ofu=syntaxcomplete#Complete
 autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview
 
+" associate *.w with cpp filetype
+autocmd BufNewFile,BufRead,BufReadPost *.w set syntax=cpp
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 03. Theme/Colors                                                           "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -71,13 +74,19 @@ set number                " show line numbers
 set numberwidth=6         " make the number gutter 6 characters wide
 set cul                   " highlight current line
 set laststatus=2          " last window always has a statusline
-set nohlsearch            " Don't continue to highlight searched phrases.
+set hlsearch              " Continue to highlight searched phrases.
 set incsearch             " But do highlight as you type your search.
 set ignorecase            " Make searches case-insensitive.
 set ruler                 " Always show info along bottom.
 set showmatch
 set statusline=%<%f\%h%m%r%=%-20.(line=%l\ \ col=%c%V\ \ totlin=%L%)\ \ \%h%m%r%=%-40(bytval=0x%B,%n%Y%)\%P
 set visualbell
+set paste                 " enable past mode for insertion
+set backspace=indent,eol,start
+"set textwidth=80
+"set nobackup		   " do not keep a backup file, use versions instead
+set history=50		  " keep 50 lines of command line history
+set showcmd		  " display incomplete commands
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 05. Text Formatting/Layout                                                 "
