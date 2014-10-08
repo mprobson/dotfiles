@@ -1,0 +1,12 @@
+vimrc - Done! May need some tweaks after using (like taking bang off au and expanding for .ci)
+remove echos, thanks to set -x
+
+remove filetype in .vim
+commit to fixup foramtting/tabs
+write up tmux config
+submit patches to original repo
+combine two functions!
+fix mac machine by re-running
+
+ssh - fixup problem... fine on new systems [Done]
+remove all unnecssary backups [Done]
