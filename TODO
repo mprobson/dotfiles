@@ -1,9 +1,9 @@
-vimrc - Done! May need some tweaks after using (like taking bang off au and expanding for .ci)
-remove echos, thanks to set -x
-
 commit to fixup foramtting/tabs
 write up tmux config
-submit patches to original repo
-combine two functions!
 fix mac machine by re-running
 
+submit patches to original repo
+combine two functions!
+
+vimrc - May need some tweaks after using (like taking bang off au and expanding for .ci)
+makesymlinks.sh - remove echos, thanks to set -x
