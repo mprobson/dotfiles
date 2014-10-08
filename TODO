@@ -1,5 +1,5 @@
 submit patches to original repo
-combine two functions!
+combine two replace functions!
 
 vimrc - May need some tweaks after using (like taking bang off au and expanding for .ci)
 makesymlinks.sh - remove echos, thanks to set -x
