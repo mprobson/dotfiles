@@ -1,0 +1,19 @@
+[user]
+	name = Michael Robson
+	email = mprobson@illinois.edu
+[color]
+	ui = true
+[push]
+	default = simple
+[branch]
+	autosetuprebase = always
+[credential]
+	helper = cache --timeout=43200
+
+[alias]
+	lg = log --stat
+	pul = pull
+[init]
+	templatedir = ~/.git_template
+[core]
+	autocrlf = input
