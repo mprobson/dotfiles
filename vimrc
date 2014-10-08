@@ -58,6 +58,9 @@ augroup markdown
   au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
 augroup END
 
+" Prettify Charm ci files
+au! BufRead,BufNewFile *.ci set filetype=ci
+
 " Highlight characters that go over 80 columns (by drawing a border on the 81st)
 if exists('+colorcolumn')
   set colorcolumn=81
