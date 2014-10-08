@@ -32,6 +32,12 @@ replace() {
     ln -s $dir/$1 ~/.$1
 }
 
+replace2() {
+    mv ~/.$2/$1 $olddir/.$2/
+    echo "Creating symlink to $1 in ~/.$2 directory."
+    ln -s $dir/$2/$1 ~/.$2/$1
+}
+
 echo "Moving any existing dotfiles from ~ to $olddir"
 for file in $files; do
   replace $file
