@@ -31,6 +31,10 @@ autocmd FileType ruby setlocal sw=2 ts=2 sts=2
 " Enable omnicompletion (to use, hold Ctrl+X then Ctrl+O while in Insert mode.
 set ofu=syntaxcomplete#Complete
 
+" When you open a file, go back to where you were
+autocmd BufWinLeave *.* mkview
+autocmd BufWinEnter *.* silent loadview
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 03. Theme/Colors                                                           "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
