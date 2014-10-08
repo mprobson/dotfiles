@@ -24,10 +24,11 @@ echo -n "Changing to the $dir directory ..."
 cd $dir
 echo "done"
 
-# move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks from the homedir to any files in the ~/dotfiles directory specified in $files
 replace() {
+    # move any existing dotfiles in homedir to dotfiles_old directory
     mv ~/.$1 $olddir/
     echo "Creating symlink to $1 in home directory."
+    # then create symlinks from the homedir to any files in the ~/dotfiles directory specified in $files
     ln -s $dir/$1 ~/.$1
 }
 
