@@ -110,3 +110,6 @@ set nowrap                " don't wrap text
 
 " Prettify JSON files making them easier to read
 command PrettyJSON %!python -m json.tool
+
+"look for a ctags file
+set tags=./tags;$HOME
