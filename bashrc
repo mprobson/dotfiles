@@ -9,6 +9,7 @@
 #   01. General ................. General Bash behavior                      #
 #   02. Aliases ................. Aliases                                    #
 #   03. Theme/Colors ............ Colors, prompts, fonts, etc.               #
+#   04. Other.................... Path fixup, etc.                           #
 ##############################################################################
 
 ##############################################################################
@@ -28,7 +29,12 @@ alias ll='ls -l'
 ##############################################################################
 # 03. Theme/Colors                                                           #
 ##############################################################################
-# CLI Colors
-export CLICOLOR=1
-# Set "ls" colors
-export LSCOLORS=Gxfxcxdxbxegedabagacad
+
+##############################################################################
+# 04. Other                                                                  #
+##############################################################################
+# Gurobi Setup
+export GUROBI_HOME="/dcsdata/home/mprobson/research/MITRE/gurobi562/linux64"
+export PATH="${PATH}:${GUROBI_HOME}/bin"
+export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:${GUROBI_HOME}/lib:${HOME}/research/MITRE/coin-Clp/lib"
+#export GRB_LICENSE_FILE=/dcsdata/home/mprobson/gurobi.lic
