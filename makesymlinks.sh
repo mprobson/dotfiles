@@ -32,6 +32,6 @@ done
 
 # handle ssh by just symlinking config
 echo "Moving any existing ssh config from ~/.ssh to $olddir"
-mv ~/.ssh/config ~/$olddir/ssh_config
+mv ~/.ssh/config $olddir/.ssh/config
 echo "Creating symlink to ssh config in .ssh directory."
-ln -s $dir/ssh/config ~/ssh/config
+ln -s $dir/ssh/config ~/.ssh/config
