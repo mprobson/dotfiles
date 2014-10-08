@@ -43,8 +43,15 @@ for file in $files; do
   replace $file
 done
 
-# handle ssh by just symlinking config
-echo "Moving any existing ssh config from ~/.ssh to $olddir"
-mv ~/.ssh/config $olddir/.ssh/config
-echo "Creating symlink to ssh config in .ssh directory."
-ln -s $dir/ssh/config ~/.ssh/config
+# handle directories by just symlinking files
+for folder in $folders; do
+    echo "Creating backup version of $folder"
+    mkdir -p $olddir/.$folder
+    echo "Moving any existing files from .$folder to $olddir/.$folder"
+    cd $dir/$folder
+    pwd
+    # Use the shell's globbing feature to get filenames, thanks stack overflow!
+    for file2 in *; do
+       replace2 $file2 $folder
+    done
+done
