@@ -1,0 +1,89 @@
+Host titan
+   HostName titan.ccs.ornl.gov
+
+Host old-titan
+   HostName interlagos.ccs.ornl.gov
+
+Host ews
+   HostName remlnx.ews.illinois.edu
+   ForwardX11 yes
+
+Host jaguar
+   HostName jaguarpf.ccs.ornl.gov 
+
+Host taub
+   HostName taub.campuscluster.illinois.edu
+
+Host golub
+   HostName golub.campuscluster.illinois.edu
+
+Host cc
+   Hostname cc-login.campuscluster.illinois.edu
+
+Host hopper
+   HostName hopper.nersc.gov
+
+Host edison
+   HostName edison.nersc.gov
+
+Host intrepid
+   HostName intrepid.alcf.anl.gov
+
+Host surveyor
+   HostName surveyor.alcf.anl.gov
+
+Host mira
+   HostName mira.alcf.anl.gov
+
+Host stampede
+   HostName login1.stampede.tacc.utexas.edu
+
+Host cab
+   HostName cab.llnl.gov
+   User robson5
+
+Host vulcan
+   HostName vulcan.llnl.gov
+   User robson5
+
+Host mira
+   HostName mira.alcf.anl.gov
+
+Host knc1
+   HostName knc1.ncsa.illinois.edu
+   User rabuch2
+   ForwardX11 yes
+
+Host knc2
+   HostName knc2.ncsa.illinois.edu
+   User mprobson
+   ForwardX11 yes
+
+Host knc3
+   HostName knc3.ncsa.illinois.edu
+#   User pmixphi
+   User mprobson
+   ForwardX11 yes
+
+Host website
+   HostName web.engr.illinois.edu
+
+Host galileo
+   HostName galileo0.cs.illinois.edu
+   User michael
+
+Host babbage
+   HostName babbage.nersc.gov
+
+Host charmgit
+   Hostname charm.cs.illinois.edu
+   User mprobson
+   Port 9418
+   IdentityFile ~/.ssh/id_rsa
+
+Host bluewaters
+  Hostname bw.ncsa.illinois.edu
+
+#Host *
+#   ControlMaster auto
+#   ControlPath /tmp/%r@%h:%p
