@@ -1,7 +1,8 @@
 ##############################################################################
 #   Filename: .bashrc                                                        #
-# Maintainer: Michael J. Smalley <michaeljsmalley@gmail.com>                 #
+# Maintainer: Michael P. Robson <mprobson@illinois.edu>                      #
 #        URL: http://github.com/michaeljsmalley/dotfiles                     #
+#        URL: http://github.com/mprobson/dotfiles                            #
 #                                                                            #
 #                                                                            #
 # Sections:                                                                  #
