@@ -8,7 +8,7 @@
 
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
-files="bashrc vimrc gitconfig vim private ssh profile"    # list of files/folders to symlink in homedir
+files="bashrc vimrc gitconfig vim private profile"    # list of files/folders to symlink in homedir
 
 ##########
 
@@ -29,3 +29,9 @@ for file in $files; do
     echo "Creating symlink to $file in home directory."
     ln -s $dir/$file ~/.$file
 done
+
+# handle ssh by just symlinking config
+echo "Moving any existing ssh config from ~/.ssh to $olddir"
+mv ~/.ssh/config ~/$olddir/ssh_config
+echo "Creating symlink to ssh config in .ssh directory."
+ln -s $dir/ssh/config ~/ssh/config
