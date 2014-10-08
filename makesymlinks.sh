@@ -25,11 +25,15 @@ cd $dir
 echo "done"
 
 # move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks from the homedir to any files in the ~/dotfiles directory specified in $files
+replace() {
+    mv ~/.$1 $olddir/
+    echo "Creating symlink to $1 in home directory."
+    ln -s $dir/$1 ~/.$1
+}
+
 echo "Moving any existing dotfiles from ~ to $olddir"
 for file in $files; do
-    mv ~/.$file $olddir/
-    echo "Creating symlink to $file in home directory."
-    ln -s $dir/$file ~/.$file
+  replace $file
 done
 
 # handle ssh by just symlinking config
