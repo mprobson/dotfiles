@@ -13,6 +13,7 @@ Host jaguar
 
 Host taub
    HostName taub.campuscluster.illinois.edu
+   User mprobson
 
 Host golub
    HostName golub.campuscluster.illinois.edu
@@ -37,6 +38,7 @@ Host mira
 
 Host stampede
    HostName login1.stampede.tacc.utexas.edu
+   User mprobson
 
 Host cab
    HostName cab.llnl.gov
@@ -67,6 +69,7 @@ Host knc3
 
 Host website
    HostName web.engr.illinois.edu
+   User mprobson
 
 Host galileo
    HostName galileo0.cs.illinois.edu
@@ -83,6 +86,10 @@ Host charmgit
 
 Host bluewaters
   Hostname bw.ncsa.illinois.edu
+
+Host style
+  Hostname style.cs.illinois.edu
+  User mprobson
 
 #Host *
 #   ControlMaster auto
