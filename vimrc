@@ -113,3 +113,17 @@ command! PrettyJSON %!python -m json.tool
 
 "look for a ctags file
 set tags=./tags;$HOME
+
+" quickly remove extra stuff (colorcol + spaces and numbers) to copy to TMS
+nnoremap <leader>c :call Copy() <cr>
+
+" bang used here so we can re-source
+function! Copy()
+  if &colorcolumn == 81
+    set colorcolumn=0
+  else
+    set colorcolumn=81
+  endif
+  set number!
+  set cul!
+endfunction
