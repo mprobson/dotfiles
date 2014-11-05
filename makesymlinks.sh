@@ -47,6 +47,10 @@ done
 for folder in $folders; do
   echo "Creating backup version of $folder"
   mkdir -p $olddir/.$folder
+  if [ ! -d ~/.$folder ] ; then
+    echo "Creating new empty version of $folder"
+    mkdir ~/.$folder
+  fi
   echo "Moving any existing files from .$folder to $olddir/.$folder"
   cd $dir/$folder
   pwd
