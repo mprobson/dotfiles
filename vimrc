@@ -127,3 +127,15 @@ function! Copy()
   set number!
   set cul!
 endfunction
+
+" turn spell checker on/off
+nnoremap <leader>s :set spell!<cr>
+
+" easily edit vimrc, thanks: (Ch. 07)
+" http://learnvimscriptthehardway.stevelosh.com/
+nnoremap <leader>ev :vs $MYVIMRC<cr>
+" and source the file quikcly
+nnoremap <leader>sv :source $MYVIMRC<cr>
+
+" toggle paste
+nnoremap <leader>p :set paste!<cr>
