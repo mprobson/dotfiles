@@ -83,7 +83,7 @@ set ruler                 " Always show info along bottom.
 set showmatch
 set statusline=%<%f\%h%m%r%=%-20.(line=%l\ \ col=%c%V\ \ totlin=%L%)\ \ \%h%m%r%=%-40(bytval=0x%B,%n%Y%)\%P
 set visualbell
-set paste                 " enable past mode for insertion
+"set paste                 " enable past mode for insertion
 set backspace=indent,eol,start
 "set textwidth=80
 "set nobackup		   " do not keep a backup file, use versions instead
