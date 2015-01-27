@@ -94,6 +94,10 @@ Host style
   Hostname style.cs.illinois.edu
   User mprobson
 
+Host beacon
+  Hostname beacon.nics.utk.edu
+  User mrobson
+
 #Host *
 #   ControlMaster auto
 #   ControlPath /tmp/%r@%h:%p
