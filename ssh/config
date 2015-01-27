@@ -98,6 +98,9 @@ Host beacon
   Hostname beacon.nics.utk.edu
   User mrobson
 
+Host cherrygarcia
+  User pi
+
 #Host *
 #   ControlMaster auto
 #   ControlPath /tmp/%r@%h:%p
