@@ -80,6 +80,7 @@ Host galileo
 
 Host babbage
    HostName babbage.nersc.gov
+   User mprobson
 
 Host charmgit
    Hostname charm.cs.illinois.edu
