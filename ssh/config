@@ -17,12 +17,15 @@ Host taub
 
 Host golub
    HostName golub.campuscluster.illinois.edu
+   User mprobson
 
 Host cc
    Hostname cc-login.campuscluster.illinois.edu
+   User mprobson
 
 Host hopper
    HostName hopper.nersc.gov
+   User mprobson
 
 Host edison
    HostName edison.nersc.gov
