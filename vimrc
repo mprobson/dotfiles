@@ -139,3 +139,6 @@ nnoremap <leader>sv :source $MYVIMRC<cr>
 
 " toggle paste
 nnoremap <leader>p :set paste!<cr>
+
+" search for trailing whitespace
+nnoremap <leader>ws /\s\+$<cr>
