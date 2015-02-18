@@ -143,3 +143,7 @@ nnoremap <leader>p :set paste!<cr>
 
 " search for trailing whitespace
 nnoremap <leader>ws /\s\+$<cr>
+
+" center the next/previous search
+nnoremap n nzz
+nnoremap N Nzz
