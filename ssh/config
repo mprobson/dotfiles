@@ -38,6 +38,7 @@ Host surveyor
 
 Host mira
    HostName mira.alcf.anl.gov
+   User mprobson
 
 Host stampede
    HostName login1.stampede.tacc.utexas.edu
@@ -50,9 +51,6 @@ Host cab
 Host vulcan
    HostName vulcan.llnl.gov
    User robson5
-
-Host mira
-   HostName mira.alcf.anl.gov
 
 Host knc1
    HostName knc1.ncsa.illinois.edu
@@ -95,9 +93,17 @@ Host style
   Hostname style.cs.illinois.edu
   User mprobson
 
+Host charm
+  Hostname charm.cs.illinois.edu
+  User mprobson
+
 Host beacon
   Hostname beacon.nics.utk.edu
   User mrobson
+
+Host psg
+  Hostname psglogin.nvidia.com
+  User mprobson
 
 Host cherrygarcia
   User pi
