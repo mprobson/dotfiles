@@ -17,6 +17,8 @@
 ##############################################################################
 # Enable the GNU versions of tools on my Mac
 export PATH=/opt/local/libexec/gnubin:$PATH
+# Add custom commands
+export PATH=$PATH:~/.bin
 
 ##############################################################################
 # 02. Aliases                                                                #
