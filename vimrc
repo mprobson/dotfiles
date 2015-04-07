@@ -147,3 +147,6 @@ nnoremap <leader>ws /\s\+$<cr>
 " center the next/previous search
 nnoremap n nzz
 nnoremap N Nzz
+
+" compile tex files with a key stroke
+nnoremap <leader>cp :!latexmk -pdf %<cr>
