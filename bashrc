@@ -15,8 +15,13 @@
 ##############################################################################
 # 01. General                                                                #
 ##############################################################################
+hostname=$(hostname)
 # Enable the GNU versions of tools on my Mac
-export PATH=/opt/local/libexec/gnubin:$PATH
+if [ "$hostname" == "wirelessprvnat" ];
+then
+  export PATH=/opt/local/libexec/gnubin:$PATH
+  echo "MAC!"
+fi
 # Add custom commands
 export PATH=$PATH:~/.bin
 
