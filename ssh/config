@@ -86,6 +86,7 @@ Host charm
 
 Host beacon
   Hostname beacon.nics.utk.edu
+  User mrobson
 
 Host psg
   Hostname psglogin.nvidia.com
