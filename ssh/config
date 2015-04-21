@@ -13,19 +13,15 @@ Host jaguar
 
 Host taub
    HostName taub.campuscluster.illinois.edu
-   User mprobson
 
 Host golub
    HostName golub.campuscluster.illinois.edu
-   User mprobson
 
 Host cc
    Hostname cc-login.campuscluster.illinois.edu
-   User mprobson
 
 Host hopper
    HostName hopper.nersc.gov
-   User mprobson
 
 Host edison
    HostName edison.nersc.gov
@@ -38,11 +34,9 @@ Host surveyor
 
 Host mira
    HostName mira.alcf.anl.gov
-   User mprobson
 
 Host stampede
    HostName login1.stampede.tacc.utexas.edu
-   User mprobson
 
 Host cab
    HostName cab.llnl.gov
@@ -59,18 +53,15 @@ Host knc1
 
 Host knc2
    HostName knc2.ncsa.illinois.edu
-   User mprobson
    ForwardX11 yes
 
 Host knc3
    HostName knc3.ncsa.illinois.edu
 #   User pmixphi
-   User mprobson
    ForwardX11 yes
 
 Host website
    HostName web.engr.illinois.edu
-   User mprobson
 
 Host galileo
    HostName galileo0.cs.illinois.edu
@@ -78,11 +69,9 @@ Host galileo
 
 Host babbage
    HostName babbage.nersc.gov
-   User mprobson
 
 Host charmgit
    Hostname charm.cs.illinois.edu
-   User mprobson
    Port 9418
    IdentityFile ~/.ssh/id_rsa
 
@@ -91,23 +80,20 @@ Host bluewaters
 
 Host style
   Hostname style.cs.illinois.edu
-  User mprobson
 
 Host charm
   Hostname charm.cs.illinois.edu
-  User mprobson
 
 Host beacon
   Hostname beacon.nics.utk.edu
-  User mrobson
 
 Host psg
   Hostname psglogin.nvidia.com
-  User mprobson
 
 Host cherrygarcia
   User pi
 
-#Host *
+Host *
+  User mprobson
 #   ControlMaster auto
 #   ControlPath /tmp/%r@%h:%p
