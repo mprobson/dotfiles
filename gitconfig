@@ -17,3 +17,4 @@
 	templatedir = ~/.git_template
 [core]
 	autocrlf = input
+	editor = vim
