@@ -1,5 +1,6 @@
-submit patches to original repo
-combine two replace functions!
+vimrc
+- May need some tweaks after using (like taking bang off au and expanding for .ci)
 
-vimrc - May need some tweaks after using (like taking bang off au and expanding for .ci)
-makesymlinks.sh - remove echos, thanks to set -x
+makesymlinks.sh
+- change replace and replace2 to more descriptive names OR combine two replace functions!
+- remove echos, thanks to set -x
