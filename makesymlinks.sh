@@ -10,9 +10,13 @@
 dir=~/dotfiles/                                   # dotfiles directory
 olddir=~/dotfiles_old/                            # old dotfiles backup directory
 files="bashrc vimrc gitconfig profile tmux.conf"  # list of files to symlink in homedir
-folders="vim ssh git_template bin"                # list of folders to symlink in homedir
+folders="vim ssh git_template bin tmux"           # list of folders to symlink in homedir
 
 ##########
+
+# install tpm (tmux package manager)
+mkdir -p tmux/plugins/
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 # create dotfiles_old in homedir
 echo -n "Creating $olddir for backup of any existing dotfiles in ~ ..."
@@ -59,3 +63,6 @@ for folder in $folders; do
     replace2 $file2 $folder
   done
 done
+
+# Reload TMUX environment so TPM is sourced:
+tmux source-file ~/.tmux.conf
