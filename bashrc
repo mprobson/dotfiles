@@ -15,12 +15,11 @@
 ##############################################################################
 # 01. General                                                                #
 ##############################################################################
-hostname=$(hostname)
+hostname=$(uname)
 # Enable the GNU versions of tools on my Mac
-if [ "$hostname" == "wirelessprvnat" ];
+if [ "$hostname" == "Darwin" ];
 then
   export PATH=/opt/local/libexec/gnubin:$PATH
-  echo "MAC!"
 fi
 # Add custom commands
 export PATH=$PATH:~/.bin
