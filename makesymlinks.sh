@@ -47,6 +47,10 @@ for file in $files; do
   replace $file
 done
 
+# install Vundle
+mkdir -p vim/bundle/
+git clone https://github.com/gmarik/Vundle.vim.git vim/bundle/Vundle.vim
+
 # handle directories by just symlinking files
 for folder in $folders; do
   echo "Creating backup version of $folder"
@@ -66,3 +70,6 @@ done
 
 # Reload TMUX environment so TPM is sourced:
 tmux source-file ~/.tmux.conf
+
+# install vim plugins
+vim +PluginInstall +qall
