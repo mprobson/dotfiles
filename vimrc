@@ -49,6 +49,9 @@ Plugin 'gmarik/Vundle.vim'
 " Avoid a name conflict with L9
 "Plugin 'user/L9', {'name': 'newL9'}
 
+" Vim session management plugin on GitHub repo
+Plugin 'tpope/vim-obsession'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 
