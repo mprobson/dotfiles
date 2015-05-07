@@ -18,6 +18,10 @@ folders="vim ssh git_template bin tmux"           # list of folders to symlink i
 mkdir -p tmux/plugins/
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
+# install Vundle
+mkdir -p vim/bundle/
+git clone https://github.com/gmarik/Vundle.vim.git vim/bundle/Vundle.vim
+
 # create dotfiles_old in homedir
 echo -n "Creating $olddir for backup of any existing dotfiles in ~ ..."
 mkdir -p $olddir
@@ -46,10 +50,6 @@ echo "Moving any existing dotfiles from ~ to $olddir"
 for file in $files; do
   replace $file
 done
-
-# install Vundle
-mkdir -p vim/bundle/
-git clone https://github.com/gmarik/Vundle.vim.git vim/bundle/Vundle.vim
 
 # handle directories by just symlinking files
 for folder in $folders; do
