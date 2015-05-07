@@ -197,3 +197,6 @@ nnoremap N Nzz
 
 " compile tex files with a key stroke
 nnoremap <leader>cp :!latexmk -pdf %<cr>
+
+" open pdf version of tex? file
+nnoremap <leader>o :!open %:r.pdf<cr>
