@@ -44,3 +44,6 @@ export GUROBI_HOME="/dcsdata/home/mprobson/research/MITRE/gurobi562/linux64"
 export PATH="${PATH}:${GUROBI_HOME}/bin"
 export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:${GUROBI_HOME}/lib:${HOME}/research/MITRE/coin-Clp/lib"
 #export GRB_LICENSE_FILE=/dcsdata/home/mprobson/gurobi.lic
+
+# Prevent history commands from being sent to history
+export HISTCONTROL=ignoreboth
