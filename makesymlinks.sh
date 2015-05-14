@@ -16,7 +16,7 @@ folders="vim ssh git_template bin tmux"           # list of folders to symlink i
 
 # install tpm (tmux package manager)
 mkdir -p tmux/plugins/
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+git clone https://github.com/tmux-plugins/tpm tmux/plugins/tpm
 
 # install Vundle
 mkdir -p vim/bundle/
