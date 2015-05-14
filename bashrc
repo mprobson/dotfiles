@@ -24,6 +24,11 @@ fi
 # Add custom commands
 export PATH=$PATH:~/.bin
 
+# Source global definitions (from NICS beacon)
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
 ##############################################################################
 # 02. Aliases                                                                #
 ##############################################################################
