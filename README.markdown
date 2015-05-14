@@ -32,3 +32,7 @@ git clone git://github.com/michaeljsmalley/dotfiles ~/dotfiles
 cd ~/dotfiles
 ./makesymlinks.sh
 ```
+
+Afterwards, when you open up Tmux you'll need to type:
+Prefix+I
+to install all the plugins.
