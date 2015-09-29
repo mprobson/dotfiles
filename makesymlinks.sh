@@ -35,14 +35,14 @@ echo "done"
 replace() {
   # move any existing dotfiles in homedir to dotfiles_old directory
   mv ~/.$1 $olddir/$1
-  echo "Creating symlink to $1 in home directory."
+  echo "Creating symlink to $1 in home directory"
   # then create symlinks from the homedir to any files in the ~/dotfiles directory specified in $files
   ln -s $dir/$1 ~/.$1
 }
 
 replace2() {
   mv ~/.$2/$1 $olddir/$2/
-  echo "Creating symlink to $1 in ~/.$2 directory."
+  echo "Creating symlink to $1 in ~/.$2 directory"
   ln -s $dir/$2/$1 ~/.$2/$1
 }
 
