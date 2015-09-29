@@ -29,9 +29,12 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
+export EDITOR=/usr/bin/vim
+
 ##############################################################################
 # 02. Aliases                                                                #
 ##############################################################################
+test -s ~/.alias && . ~/.alias || true
 # Enable colors in "ls" command output
 alias ls='ls --color'
 alias ll='ls -l'
