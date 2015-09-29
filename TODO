@@ -4,3 +4,5 @@ vimrc
 makesymlinks.sh
 - change replace and replace2 to more descriptive names OR combine two replace functions!
 - remove echos, thanks to set -x
+- make this re-entrant
+  - for instance, check if dirs/files already exist
