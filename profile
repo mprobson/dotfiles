@@ -1,3 +1,5 @@
+test -z "$PROFILEREAD" && . /etc/profile || true
+
 export SPEECHD_PORT=6561
 
 # My Changes
