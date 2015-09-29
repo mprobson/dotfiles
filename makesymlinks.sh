@@ -15,11 +15,11 @@ folders="vim ssh git_template bin tmux"           # list of folders to symlink i
 ##########
 
 # install tpm (tmux package manager)
-mkdir -p tmux/plugins/
+mkdir -p $dir/tmux/plugins/
 git clone https://github.com/tmux-plugins/tpm tmux/plugins/tpm
 
 # install Vundle
-mkdir -p vim/bundle/
+mkdir -p $dir/vim/bundle/
 git clone https://github.com/gmarik/Vundle.vim.git vim/bundle/Vundle.vim
 
 # create dotfiles_old in homedir
