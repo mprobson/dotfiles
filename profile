@@ -16,10 +16,10 @@ then
   # MacPorts Installer addition on 2014-09-09_at_01:15:07: adding an appropriate PATH variable for use with MacPorts.
   export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
   # Finished adapting your PATH environment variable for use with MacPorts.
-# TODO make this an if instead of an else
-else
-  export PATH="$PATH:/dcsdata/home/mprobson/projections/bin"
 fi
+
+# TODO make this an if?
+export PATH="$PATH:/dcsdata/home/mprobson/projections/bin"
 
 # Run .bashrc configurations if the file exists
 if [ -f ~/.bashrc ]; then
