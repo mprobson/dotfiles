@@ -53,6 +53,10 @@ Plugin 'gmarik/Vundle.vim'
 " Vim session management plugin on GitHub repo
 Plugin 'tpope/vim-obsession'
 
+" Vim markdown advanced syntax highlighting
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 
@@ -100,12 +104,6 @@ autocmd Syntax json sou ~/.vim/syntax/json.vim
 
 " Prettify Vagrantfile
 autocmd BufRead,BufNewFile Vagrantfile set filetype=ruby
-
-" Prettify Markdown files
-augroup markdown
-  au!
-  au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
-augroup END
 
 " Prettify Charm ci files
 au! BufRead,BufNewFile *.ci set filetype=ci
