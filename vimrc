@@ -57,6 +57,9 @@ Plugin 'tpope/vim-obsession'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 
+" Extra whitespace
+Plugin 'ntpeters/vim-better-whitespace'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 
