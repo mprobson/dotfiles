@@ -94,6 +94,12 @@ Host psg
 Host cherrygarcia
   User pi
 
+Host clarity
+  User pplroot
+
+Host ppl-*
+  User pplroot
+
 Host *
   User mprobson
 #   ControlMaster auto
