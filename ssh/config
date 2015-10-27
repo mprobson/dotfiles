@@ -102,5 +102,6 @@ Host ppl-*
 
 Host *
   User mprobson
+  ForwardX11 yes
 #   ControlMaster auto
 #   ControlPath /tmp/%r@%h:%p
