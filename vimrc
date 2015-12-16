@@ -60,6 +60,9 @@ Plugin 'plasticboy/vim-markdown'
 " Extra whitespace
 Plugin 'ntpeters/vim-better-whitespace'
 
+" Vim Indent Guides
+Plugin 'nathanaelkane/vim-indent-guides'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 
