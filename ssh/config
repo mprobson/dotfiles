@@ -97,6 +97,11 @@ Host cherrygarcia
 Host clarity
   User pplroot
 
+Host daphne
+  Hostname 73.211.151.191
+  User michael
+  Port 6451
+
 Host ppl-*
   User pplroot
 
