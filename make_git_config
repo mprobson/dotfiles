@@ -1,15 +1,24 @@
+#!/bin/bash
+branch=$(
+  git --version | awk '{
+    if ($3 < 2.0)
+      print "current";
+    else
+      print "simple";
+  }'
+)
+cat <<HEREDOC > gitconfig
 [user]
 	name = Michael Robson
 	email = mprobson@illinois.edu
 [color]
 	ui = true
 [push]
-	default = simple
+	default = $branch
 [branch]
 	autosetuprebase = always
 [credential]
 	helper = cache --timeout=43200
-
 [alias]
 	lg = log --stat
 	pul = pull
@@ -18,3 +27,4 @@
 [core]
 	autocrlf = input
 	editor = vim
+HEREDOC

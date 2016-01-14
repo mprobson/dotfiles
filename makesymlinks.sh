@@ -32,6 +32,9 @@ echo -n "Changing to the $dir directory ..."
 cd $dir
 echo "done"
 
+# create gitconfig
+./make_git_config
+
 replace() {
   # move any existing dotfiles in homedir to dotfiles_old directory
   if [ -e ~/.$1 ] ; then
