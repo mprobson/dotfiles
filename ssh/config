@@ -102,6 +102,11 @@ Host daphne
   User michael
   Port 6451
 
+Host sonar
+  Hostname sonar.mobi
+  User michael
+  Port 6451
+
 Host ppl-*
   User pplroot
 
