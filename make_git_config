@@ -22,6 +22,7 @@ cat <<HEREDOC > gitconfig
 [alias]
 	lg = log --stat
 	pul = pull
+	gr = log --graph --pretty=oneline --abbrev-commit --full-history
 [init]
 	templatedir = ~/.git_template
 [core]
