@@ -21,6 +21,19 @@ fi
 # TODO make this an if?
 export PATH="$PATH:~/projections/bin"
 
+# BlueWaters config and modules
+if [[ $(hostname) =~ h2ologin[0-9]* ]] ;
+then
+  export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/acml/5.3.1/gfortran64/lib/
+  module swap PrgEnv-cray PrgEnv-gnu
+  module load rca
+  module load craype-hugepages8M
+  module load fftw
+  module load acml
+  module load git
+  export HUGETLB_MORECORE=no
+fi
+
 # Run .bashrc configurations if the file exists
 if [ -f ~/.bashrc ]; then
   source ~/.bashrc
