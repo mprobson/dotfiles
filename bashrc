@@ -55,3 +55,6 @@ export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:${GUROBI_HOME}/lib:${HOME}/research/M
 
 # Prevent history commands from being sent to history
 export HISTCONTROL=ignoreboth
+
+# Mark BASHRC as executed
+export ROBSON_BASHRC_READ=true

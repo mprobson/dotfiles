@@ -65,6 +65,6 @@ fi
 # 03. Other                                                                  #
 ##############################################################################
 # Run .bashrc configurations if the file exists
-if [ -f ~/.bashrc ]; then
+if [[ -f ~/.bashrc && "$ROBSON_BASHRC_READ" != "true" ]]; then
   source ~/.bashrc
 fi
