@@ -52,6 +52,9 @@ then
   module load acml
   module load git
   export HUGETLB_MORECORE=no
+
+  # Fix VIM coloring
+  export LESS="$LESS -R"
 fi
 
 ##############################################################################
