@@ -15,9 +15,9 @@
 ##############################################################################
 # 01. General                                                                #
 ##############################################################################
-hostname=$(uname)
+OSName=$(uname)
 # Enable the GNU versions of tools on my Mac
-if [ "$hostname" == "Darwin" ];
+if [ "$OSName" == "Darwin" ];
 then
   export PATH=/opt/local/libexec/gnubin:$PATH
 fi

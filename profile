@@ -28,10 +28,10 @@ export CMAKE_LIBRARY_PATH=~/myUsr/local/lib:$CMAKE_LIBRARY_PATH
 ##############################################################################
 # 02. Machine Specific                                                       #
 ##############################################################################
-hostname=$(uname)
+OSName=$(uname)
 
 # Mac OS aka local laptop
-if [ "$hostname" == "Darwin" ];
+if [ "$OSName" == "Darwin" ];
 then
   # MacPorts Installer addition on 2014-09-09_at_01:15:07: adding an appropriate PATH variable for use with MacPorts.
   export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
