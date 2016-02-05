@@ -1,3 +1,18 @@
+##############################################################################
+#   Filename: .profile                                                       #
+# Maintainer: Michael P. Robson <mprobson@illinois.edu>                      #
+#        URL: http://github.com/mprobson/dotfiles                            #
+#                                                                            #
+#                                                                            #
+# Sections:                                                                  #
+#   01. General ................. General Bash behavior                      #
+#   02. Machine Specific ........ Machine specific setup commands            #
+#   03. Other.................... Path fixup, etc.                           #
+##############################################################################
+
+##############################################################################
+# 01. General                                                                #
+##############################################################################
 test -z "$PROFILEREAD" && . /etc/profile || true
 
 export SPEECHD_PORT=6561
@@ -10,7 +25,12 @@ export CPATH=~/myUsr/local/include/:$CPATH
 export LD_LIBRARY_PATH=~/myUsr/local/lib:$LD_LIBRARY_PATH
 export CMAKE_LIBRARY_PATH=~/myUsr/local/lib:$CMAKE_LIBRARY_PATH
 
+##############################################################################
+# 02. Machine Specific                                                       #
+##############################################################################
 hostname=$(uname)
+
+# Mac OS aka local laptop
 if [ "$hostname" == "Darwin" ];
 then
   # MacPorts Installer addition on 2014-09-09_at_01:15:07: adding an appropriate PATH variable for use with MacPorts.
@@ -34,6 +54,9 @@ then
   export HUGETLB_MORECORE=no
 fi
 
+##############################################################################
+# 03. Other                                                                  #
+##############################################################################
 # Run .bashrc configurations if the file exists
 if [ -f ~/.bashrc ]; then
   source ~/.bashrc
