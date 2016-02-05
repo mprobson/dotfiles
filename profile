@@ -52,6 +52,10 @@ then
   module load acml
   module load git
   export HUGETLB_MORECORE=no
+  module swap craype-hugepages8M   craype-hugepages128K
+  module swap craype-hugepages128K craype-hugepages512K
+  module swap craype-hugepages512K craype-hugepages2M
+  module swap craype-hugepages2M   craype-hugepages8M
 
   # Fix VIM coloring
   export LESS="$LESS -R"
