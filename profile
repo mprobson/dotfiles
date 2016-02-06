@@ -42,7 +42,7 @@ fi
 export PATH="$PATH:~/projections/bin"
 
 # BlueWaters config and modules
-if [[ $(hostname) =~ h2ologin[0-9]* ]] ;
+if [[ $(hostname) =~ (h2ologin|nid)[0-9]+ ]] ;
 then
   export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/acml/5.3.1/gfortran64/lib/
   module swap PrgEnv-cray PrgEnv-gnu
