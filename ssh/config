@@ -107,6 +107,10 @@ Host sonar
   User michael
   Port 6451
 
+Host triton
+  Hostname triton.ks.uiuc.edu
+  User mprobson
+
 Host ppl-*
   User pplroot
 
