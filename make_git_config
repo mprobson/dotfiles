@@ -12,7 +12,7 @@ cat <<HEREDOC > gitconfig
 	name = Michael Robson
 	email = mprobson@illinois.edu
 [color]
-	ui = true
+	ui = auto
 [push]
 	default = $branch
 [branch]
