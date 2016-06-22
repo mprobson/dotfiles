@@ -7,6 +7,10 @@ branch=$(
       print "simple";
   }'
 )
+pager=""
+if [[ `hostname` =~ edison.* ]] ; then
+  pager="pager = less -R"
+fi
 cat <<HEREDOC > gitconfig
 [user]
 	name = Michael Robson
@@ -28,4 +32,5 @@ cat <<HEREDOC > gitconfig
 [core]
 	autocrlf = input
 	editor = vim
+	$pager
 HEREDOC
