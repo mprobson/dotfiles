@@ -74,19 +74,20 @@ done
 
 # handle directories by just symlinking files
 for folder in $folders; do
-  echo "Creating backup version of $folder"
-  mkdir -p $olddir/$folder
   if [ ! -d ~/.$folder ] ; then
     echo "Creating new empty version of $folder"
     mkdir ~/.$folder
+  else
+    echo "Creating backup version of $folder"
+    mkdir -p $olddir/$folder
+    echo "Moving any existing files from ~/.$folder to $olddir/$folder"
+    cd $dir/$folder
+    pwd
+    # Use the shell's globbing feature to get filenames, thanks stack overflow!
+    for file2 in *; do
+      replace2 $file2 $folder
+    done
   fi
-  echo "Moving any existing files from ~/.$folder to $olddir/$folder"
-  cd $dir/$folder
-  pwd
-  # Use the shell's globbing feature to get filenames, thanks stack overflow!
-  for file2 in *; do
-    replace2 $file2 $folder
-  done
 done
 
 if [ $tmux_exists ] ; then
