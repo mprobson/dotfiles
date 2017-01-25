@@ -9,14 +9,28 @@
 
 dir=~/dotfiles/                                   # dotfiles directory
 olddir=~/dotfiles_old/                            # old dotfiles backup directory
-files="bashrc vimrc gitconfig profile tmux.conf"  # list of files to symlink in homedir
-folders="vim ssh git_template bin tmux"           # list of folders to symlink in homedir
+files="bashrc vimrc gitconfig profile"            # list of files to symlink in homedir
+folders="vim ssh git_template bin"                # list of folders to symlink in homedir
+tmux_exists=0                                     # 1 if true (bash exists), 0 otherwise
 
 ##########
 
-# install tpm (tmux package manager)
-mkdir -p $dir/tmux/plugins/
-git clone https://github.com/tmux-plugins/tpm tmux/plugins/tpm
+# source: http://stackoverflow.com/a/3931779/3984520
+command_exists () {
+  type "$1" > /dev/null 2>&1 ;
+}
+
+if command_exists tmux ; then
+  tmux_exists=1
+  files="$files tmux.conf"
+  folders="$folders tmux"
+fi
+
+if [ $tmux_exists ] ; then
+  # install tpm (tmux package manager)
+  mkdir -p $dir/tmux/plugins/
+  git clone https://github.com/tmux-plugins/tpm tmux/plugins/tpm
+fi
 
 # install Vundle
 mkdir -p $dir/vim/bundle/
@@ -75,8 +89,10 @@ for folder in $folders; do
   done
 done
 
-# Reload TMUX environment so TPM is sourced:
-tmux source-file ~/.tmux.conf
+if [ $tmux_exists ] ; then
+  # Reload TMUX environment so TPM is sourced:
+  tmux source-file ~/.tmux.conf
+fi
 
 # install vim plugins
 vim +PluginInstall +qall
