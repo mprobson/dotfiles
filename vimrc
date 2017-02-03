@@ -209,6 +209,9 @@ nnoremap <leader>cp :!latexmk -pdf %<cr>
 " open pdf version of tex? file
 nnoremap <leader>o :!open %:r.pdf<cr>
 
+" replace [ ] and [X]
+vnoremap <leader>r :s/\[X\]/<input type=checkbox disabled checked>/g <bar> :'<,'>s/\[\ \]/<input type=checkbox disabled>/g<cr>
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 08. Automatic spec Creation                                                "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
