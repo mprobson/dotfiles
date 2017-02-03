@@ -111,6 +111,9 @@ Host triton
   Hostname triton.ks.uiuc.edu
   User mprobson
 
+Host nano
+  Hostname nano.ncsa.illinois.edu
+
 Host ppl-*
   User pplroot
 
