@@ -114,6 +114,9 @@ Host triton
 Host nano
   Hostname nano.ncsa.illinois.edu
 
+Host bigdog
+  Hostname bigdog.ansci.illinois.edu
+
 Host ppl-*
   User pplroot
 
