@@ -36,7 +36,12 @@ export EDITOR=/usr/bin/vim
 ##############################################################################
 test -s ~/.alias && . ~/.alias || true
 # Enable colors in "ls" command output
-alias ls='ls --color'
+if [ "$OSName" == "Darwin" -a `which ls` == "/bin/ls" ];
+then
+  alias ls='ls -G'
+else
+  alias ls='ls --color'
+fi
 alias ll='ls -l'
 #alias grep='ack-grep'
 
