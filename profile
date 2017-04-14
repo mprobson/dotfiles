@@ -33,6 +33,9 @@ OSName=$(uname)
 # Mac OS aka local laptop
 if [ "$OSName" == "Darwin" ];
 then
+  # Auto-added, by python?
+  export PATH=/opt/local/Library/Frameworks/Python.framework/Versions/Current/bin/:$PATH
+
   # MacPorts Installer addition on 2014-09-09_at_01:15:07: adding an appropriate PATH variable for use with MacPorts.
   export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
   # Finished adapting your PATH environment variable for use with MacPorts.
