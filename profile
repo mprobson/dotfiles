@@ -73,12 +73,6 @@ fi
 ##############################################################################
 # 03. Other                                                                  #
 ##############################################################################
-# Gurobi Setup
-export GUROBI_HOME="/dcsdata/home/mprobson/research/MITRE/gurobi562/linux64"
-export PATH="${PATH}:${GUROBI_HOME}/bin"
-export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:${GUROBI_HOME}/lib:${HOME}/research/MITRE/coin-Clp/lib"
-#export GRB_LICENSE_FILE=/dcsdata/home/mprobson/gurobi.lic
-
 # Add RVM to PATH for scripting
 export PATH="$PATH:$HOME/.rvm/bin"
 
