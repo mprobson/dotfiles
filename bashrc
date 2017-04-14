@@ -34,7 +34,6 @@ else
   alias ls='ls --color'
 fi
 alias ll='ls -l'
-#alias grep='ack-grep'
 
 ##############################################################################
 # 03. Theme/Colors                                                           #
