@@ -25,14 +25,23 @@ export CPATH=~/myUsr/local/include/:$CPATH
 export LD_LIBRARY_PATH=~/myUsr/local/lib:$LD_LIBRARY_PATH
 export CMAKE_LIBRARY_PATH=~/myUsr/local/lib:$CMAKE_LIBRARY_PATH
 
+export EDITOR=/usr/bin/vim
+
+# Add custom commands
+export PATH=$PATH:~/.bin
+
+# TODO make this an if?
+export PATH="$PATH:~/projections/bin"
+
 ##############################################################################
 # 02. Machine Specific                                                       #
 ##############################################################################
 OSName=$(uname)
-
-# Mac OS aka local laptop
 if [ "$OSName" == "Darwin" ];
 then
+  # Enable the GNU versions of tools on my Mac
+  export PATH=/opt/local/libexec/gnubin:$PATH
+
   # Auto-added, by python?
   export PATH=/opt/local/Library/Frameworks/Python.framework/Versions/Current/bin/:$PATH
 
@@ -40,9 +49,6 @@ then
   export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
   # Finished adapting your PATH environment variable for use with MacPorts.
 fi
-
-# TODO make this an if?
-export PATH="$PATH:~/projections/bin"
 
 # BlueWaters config and modules
 if [[ $(hostname) =~ (h2ologin|nid)[0-9]+ ]] ;
@@ -67,7 +73,19 @@ fi
 ##############################################################################
 # 03. Other                                                                  #
 ##############################################################################
+# Gurobi Setup
+export GUROBI_HOME="/dcsdata/home/mprobson/research/MITRE/gurobi562/linux64"
+export PATH="${PATH}:${GUROBI_HOME}/bin"
+export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:${GUROBI_HOME}/lib:${HOME}/research/MITRE/coin-Clp/lib"
+#export GRB_LICENSE_FILE=/dcsdata/home/mprobson/gurobi.lic
+
+# Add RVM to PATH for scripting
+export PATH="$PATH:$HOME/.rvm/bin"
+
+# Load RVM into a shell session *as a function*
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
 # Run .bashrc configurations if the file exists
-if [[ -f ~/.bashrc && "$ROBSON_BASHRC_READ" != "true" ]]; then
+if [[ -f ~/.bashrc ]]; then
   source ~/.bashrc
 fi
