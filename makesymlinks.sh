@@ -76,7 +76,7 @@ done
 for folder in $folders; do
   if [ ! -d ~/.$folder ] ; then
     echo "Creating new empty version of $folder"
-    mkdir ~/.$folder
+    replace $folder
   else
     echo "Creating backup version of $folder"
     mkdir -p $olddir/$folder
