@@ -117,6 +117,9 @@ Host nano
 Host bigdog
   Hostname bigdog.ansci.illinois.edu
 
+Host bridges
+  Hostname bridges.psc.edu
+
 Host ppl-*
   User pplroot
 
