@@ -6,3 +6,6 @@ makesymlinks.sh
 - remove echos, thanks to set -x
 - make this re-entrant
   - for instance, check if dirs/files already exist
+
+gitignore
+- automate based on gitignore.io scripts and platform
