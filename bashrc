@@ -46,3 +46,11 @@ alias ll='ls -l'
 ##############################################################################
 # Prevent history commands from being sent to history
 export HISTCONTROL=ignoreboth
+
+# Enable ruby environment management
+if [ -z "${MPRSETRBENV+x}" ];
+then
+  eval "$(rbenv init -)"
+
+  export MPRSETRBENV=true
+fi
