@@ -14,7 +14,7 @@ fi
 cat <<HEREDOC > gitconfig
 [user]
 	name = Michael Robson
-	email = mprobson@illinois.edu
+	email = michael.robson@villanova.edu
 [color]
 	ui = auto
 [push]
@@ -29,6 +29,7 @@ cat <<HEREDOC > gitconfig
 	gr = log --graph --oneline --decorate --full-history
 [init]
 	templatedir = ~/.git_template
+	defaultBranch = main
 [core]
 	autocrlf = input
 	editor = vim
