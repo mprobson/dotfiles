@@ -10,7 +10,7 @@
 dir=~/dotfiles/                                   # dotfiles directory
 olddir=~/dotfiles_old/                            # old dotfiles backup directory
 files="bashrc vimrc gitconfig gitignore_global profile" # list of files to symlink in homedir
-folders="vim ssh git_template bin"                # list of folders to symlink in homedir
+folders="vim ssh git_template bin spack"          # list of folders to symlink in homedir
 tmux_exists=0                                     # 1 if true (bash exists), 0 otherwise
 
 ##########
