@@ -120,6 +120,22 @@ Host bigdog
 Host bridges
   Hostname bridges.psc.edu
 
+Host stampede2
+  Hostname stampede2.tacc.utexas.edu
+
+Host summit
+  Hostname summit.olcf.ornl.gov
+
+Host felix
+  Hostname felix.csc.villanova.edu
+
+Host clusty
+  Hostname clusty.ast.villanova.edu
+
+Host augie
+  Hostname augie.villanova.edu
+  User mrobso01
+
 Host ppl-*
   User pplroot
 
