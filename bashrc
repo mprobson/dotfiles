@@ -30,6 +30,8 @@ test -s ~/.alias && . ~/.alias || true
 if [ "$OSName" == "Darwin" -a `which ls` == "/bin/ls" ];
 then
   alias ls='ls -G'
+  alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
+  alias chromium='/Applications/Chromium.app/Contents/MacOS/Chromium'
 else
   alias ls='ls --color'
 fi
