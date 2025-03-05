@@ -56,6 +56,8 @@ Plugin 'tpope/vim-obsession'
 " Vim markdown advanced syntax highlighting
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
+" Disable vim markdown folding
+let g:vim_markdown_folding_disabled = 1
 
 " Extra whitespace
 Plugin 'ntpeters/vim-better-whitespace'
