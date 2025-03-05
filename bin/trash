@@ -1,0 +1,10 @@
+#!/bin/bash
+# https://distrowatch.com/weekly.php?issue=20240520#qa
+
+if [ $# -lt 1 ]
+then
+   echo "Provide the name of at least one file."
+   exit 1
+fi
+mkdir -p ~/Trash
+mv $@ ~/Trash/
