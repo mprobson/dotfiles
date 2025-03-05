@@ -1,5 +1,8 @@
 oh-my-zsh/
 vim/vim
 vim/.netrwhist
+vim/bundle/
+vim/view/
 chef/
 private
+zgenom/
