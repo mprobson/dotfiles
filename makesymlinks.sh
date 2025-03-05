@@ -10,7 +10,7 @@
 dir=~/dotfiles/                                   # dotfiles directory
 olddir=~/dotfiles_old/                            # old dotfiles backup directory
 files="bashrc vimrc gitconfig profile wezterm.lua zshrc" # list of files to symlink in homedir
-folders="vim ssh git_template bin"                # list of folders to symlink in homedir
+folders="vim ssh git_template bin zgenom"                # list of folders to symlink in homedir
 tmux_exists=0                                     # 1 if true (bash exists), 0 otherwise
 
 ##########
@@ -35,6 +35,9 @@ fi
 # install Vundle
 mkdir -p $dir/vim/bundle/
 git clone https://github.com/gmarik/Vundle.vim.git vim/bundle/Vundle.vim
+
+# install zgenom
+git clone https://github.com/jandamm/zgenom.git
 
 # create dotfiles_old in homedir
 echo -n "Creating $olddir for backup of any existing dotfiles in ~ ..."
