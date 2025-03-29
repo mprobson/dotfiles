@@ -38,6 +38,9 @@ Host mira
 Host stampede
    HostName login1.stampede.tacc.utexas.edu
 
+Host stampede2
+   HostName stampede2.tacc.utexas.edu
+
 Host cab
    HostName cab.llnl.gov
    User robson5
@@ -117,8 +120,17 @@ Host nano
 Host bigdog
   Hostname bigdog.ansci.illinois.edu
 
+Host comet
+  Hostname comet.sdsc.xsede.org
+
+Host comet2
+  Hostname comet-ln2.sdsc.xsede.org
+
+Host comet3
+  Hostname comet-ln3.sdsc.xsede.org
+
 Host bridges
-  Hostname bridges.psc.edu
+  Hostname bridges.psc.xsede.org
 
 Host ppl-*
   User pplroot
