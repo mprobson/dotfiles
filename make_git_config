@@ -33,4 +33,6 @@ cat <<HEREDOC > gitconfig
 	autocrlf = input
 	editor = vim
 	$pager
+[grep]
+	lineNumber = true
 HEREDOC
